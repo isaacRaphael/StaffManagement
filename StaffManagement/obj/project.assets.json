@@ -6531,19 +6531,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\UzorNwachukwu\\.nuget\\packages\\": {}
+    "C:\\Users\\IFUNANYAONAH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Documents\\Coding\\C# Playground\\Asp.NET\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
+      "projectUniqueName": "C:\\Users\\IFUNANYAONAH\\Documents\\IFUNNAYA.BULB\\Projects\\ASP.NET\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
       "projectName": "StaffManagement",
-      "projectPath": "E:\\Documents\\Coding\\C# Playground\\Asp.NET\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
-      "packagesPath": "C:\\Users\\UzorNwachukwu\\.nuget\\packages\\",
-      "outputPath": "E:\\Documents\\Coding\\C# Playground\\Asp.NET\\StaffManagement\\StaffManagement\\obj\\",
+      "projectPath": "C:\\Users\\IFUNANYAONAH\\Documents\\IFUNNAYA.BULB\\Projects\\ASP.NET\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
+      "packagesPath": "C:\\Users\\IFUNANYAONAH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IFUNANYAONAH\\Documents\\IFUNNAYA.BULB\\Projects\\ASP.NET\\StaffManagement\\StaffManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\UzorNwachukwu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IFUNANYAONAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6600,8 +6600,20 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
             "name": "Microsoft.NETCore.App.Host.win-x64",
             "version": "[5.0.15, 5.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
           }
         ],
         "frameworkReferences": {
