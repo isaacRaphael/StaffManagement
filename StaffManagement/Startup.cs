@@ -40,10 +40,15 @@ namespace StaffManagement
             }
                 ).AddEntityFrameworkStores<AppDbContext>();
             services.AddScoped<IStaffRepository, StaffRepository>();
+            services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/Unauthorized/Denied");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, 
+                    IWebHostEnvironment env,
+                    AppDbContext db,
+                    RoleManager<IdentityRole> roleManager,
+                    UserManager<Staff> userManager)
         {
             if (env.IsDevelopment())
             {
@@ -59,9 +64,10 @@ namespace StaffManagement
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
+            SeedAdmin.Seed(db, roleManager, userManager).Wait();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

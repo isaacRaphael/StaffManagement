@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using StaffManagement.Contracts;
 using StaffManagement.Models;
@@ -51,7 +52,7 @@ namespace StaffManagement.Controllers
 
             return View(allStaffs);
         }
-
+        [Authorize(Roles ="Admin")]
         // Action for the registration page
         public IActionResult Register()
         {
