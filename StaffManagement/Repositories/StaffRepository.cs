@@ -4,6 +4,7 @@ using StaffManagement.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace StaffManagement.Repositories
@@ -27,17 +28,17 @@ namespace StaffManagement.Repositories
             return _db.Staffs.ToList();
         }
 
-        public Staff GetStaff(int id)
+        public Staff GetStaff(Expression<Func<Staff, bool>> predicate)
         {
-            return _db.Staffs.Find(id);
+            return _db.Staffs.AsQueryable().FirstOrDefault(predicate);
         }
 
         public bool RemoveStaff(int id)
         {
             var staff = _db.Staffs.Find(id);
-            if(staff == null)
+            if (staff == null)
             {
-                return false;            
+                return false;
             }
 
             _db.Staffs.Remove(staff);

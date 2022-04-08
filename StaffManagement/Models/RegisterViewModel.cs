@@ -24,11 +24,11 @@ namespace StaffManagement.Models
         public string Email { get; set; }
 
         [Required]
-        [DisplayName("password")]
+        [DisplayName("Password")]
         public string Password { get; set; }
 
         [Required]
-        [DisplayName("password")]
+        [DisplayName("Confirm Password")]
         [Compare("Password", ErrorMessage = "Password must match")]
         public string ConfirmPassword { get; set; }
     }
