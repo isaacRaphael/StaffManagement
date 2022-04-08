@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EmekaEwelike\\source\\repos\\StaffManagement\\StaffManagement\\StaffManagement.csproj": {}
+    "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EmekaEwelike\\source\\repos\\StaffManagement\\StaffManagement\\StaffManagement.csproj": {
+    "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EmekaEwelike\\source\\repos\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
+        "projectUniqueName": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
         "projectName": "StaffManagement",
-        "projectPath": "C:\\Users\\EmekaEwelike\\source\\repos\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
-        "packagesPath": "C:\\Users\\EmekaEwelike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EmekaEwelike\\source\\repos\\StaffManagement\\StaffManagement\\obj\\",
+        "projectPath": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
+        "packagesPath": "C:\\Users\\RaphaelIsaac\\.nuget\\packages\\",
+        "outputPath": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\EmekaEwelike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RaphaelIsaac\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
