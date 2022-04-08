@@ -51,5 +51,52 @@ namespace StaffManagement.Controllers
 
             return View(allStaffs);
         }
+
+        // Action for the registration page
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            var userWithEmail = _staffRepository.GetStaff(s => s.Email == model.Email);
+            var userWithUserName = _staffRepository.GetStaff(s => s.UserName == model.UserName);
+
+            if (userWithEmail != null || userWithUserName != null)
+            {
+                ModelState.AddModelError("", "User already exists");
+                return View(model);
+            }
+
+            var newUser = new Staff
+            {
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                UserName = model.UserName,
+                Email = model.Email,
+                JobTitle = model.JobTitle,
+                Department = model.Department
+            };
+
+            var result = await _userManager.CreateAsync(newUser, model.Password);
+
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "Unable to create user");
+                return View(model);
+            }
+
+            await _signInManager.SignInAsync(newUser, false);
+
+            return RedirectToAction("Index");
+        }
     }
 }
