@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IFUNANYAONAH\\Documents\\IFUNNAYA.BULB\\Projects\\ASP.NET\\StaffManagement\\StaffManagement\\StaffManagement.csproj": {}
+    "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IFUNANYAONAH\\Documents\\IFUNNAYA.BULB\\Projects\\ASP.NET\\StaffManagement\\StaffManagement\\StaffManagement.csproj": {
+    "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IFUNANYAONAH\\Documents\\IFUNNAYA.BULB\\Projects\\ASP.NET\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
+        "projectUniqueName": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
         "projectName": "StaffManagement",
-        "projectPath": "C:\\Users\\IFUNANYAONAH\\Documents\\IFUNNAYA.BULB\\Projects\\ASP.NET\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
-        "packagesPath": "C:\\Users\\IFUNANYAONAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IFUNANYAONAH\\Documents\\IFUNNAYA.BULB\\Projects\\ASP.NET\\StaffManagement\\StaffManagement\\obj\\",
+        "projectPath": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
+        "packagesPath": "C:\\Users\\RaphaelIsaac\\.nuget\\packages\\",
+        "outputPath": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IFUNANYAONAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RaphaelIsaac\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,6 +57,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -69,24 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.15, 5.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -95,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

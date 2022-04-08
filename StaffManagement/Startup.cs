@@ -12,6 +12,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using StaffManagement.Models;
+using StaffManagement.Contracts;
+using StaffManagement.Repositories;
 
 namespace StaffManagement
 {
@@ -30,6 +32,7 @@ namespace StaffManagement
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("default")));
             services.AddIdentity<Staff, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddScoped<IStaffRepository, StaffRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -10,7 +10,7 @@ using StaffManagement.DataAccess;
 namespace StaffManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220408124052_init")]
+    [Migration("20220408142933_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
