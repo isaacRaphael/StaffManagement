@@ -47,8 +47,9 @@ namespace StaffManagement.Controllers
         }
         public IActionResult Index()
         {
+            var allStaffs = _staffRepository.GetAllStaff();
 
-            return View();
+            return View(allStaffs);
         }
     }
 }
