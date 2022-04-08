@@ -7404,19 +7404,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\UzorNwachukwu\\.nuget\\packages\\": {}
+    "C:\\Users\\RaphaelIsaac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UzorNwachukwu\\Desktop\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
+      "projectUniqueName": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
       "projectName": "StaffManagement",
-      "projectPath": "C:\\Users\\UzorNwachukwu\\Desktop\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
-      "packagesPath": "C:\\Users\\UzorNwachukwu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UzorNwachukwu\\Desktop\\StaffManagement\\StaffManagement\\obj\\",
+      "projectPath": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\StaffManagement.csproj",
+      "packagesPath": "C:\\Users\\RaphaelIsaac\\.nuget\\packages\\",
+      "outputPath": "E:\\Project Files\\C# sandbox\\StaffManagement\\StaffManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\UzorNwachukwu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RaphaelIsaac\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7475,12 +7475,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.15, 5.0.15]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7489,7 +7483,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

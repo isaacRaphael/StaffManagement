@@ -3,28 +3,31 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-<a asp-action="Register" class="btn btn-primary text-white float-right">Register New Staff</a>
-<div class="card-group">
-    @if (Model.Count() > 0)
-    {
+<h1 class="display-4 text-primary">Our Team</h1>
+<a asp-action="Register" class="btn btn-primary text-white float-right mb-5">Register New Staff</a>
 
-        @foreach (var item in Model)
-        {
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">@item.FirstName @item.LastName</h5>
-                <p class="card-text">@item.JobTitle</p>
-                <p class="card-text"><small class="text-muted"><a asp-action="" text-color="white">View details</a></small></p>
+@if (Model.Count() > 0)
+{
+        <div class="row container">
+            @foreach (var item in Model)
+            {
+            <div class="col-3 mx-2 card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS16iuSg-r14_WgMsoXK_mPy2W4YsPThTp-Iw&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.FirstName @item.LastName</h5>
+                    <p class="card-text">@item.JobTitle</p>
+                    <p class="card-text"><small class="text-muted"><a asp-action="" text-color="white">View details</a></small></p>
+                </div>
             </div>
+
+            }
+        </div>
         }
-    }
-    else
-    {
+        else
+        {
 
         <small class="mt-5 text-center">No Staffs added yet</small>
-    }
+        }
 
 
 
-</div>

@@ -31,7 +31,14 @@ namespace StaffManagement
         {
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("default")));
-            services.AddIdentity<Staff, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddIdentity<Staff, IdentityRole>( options =>
+            {
+                options.Password.RequiredLength = 5;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireDigit = false;
+            }
+                ).AddEntityFrameworkStores<AppDbContext>();
             services.AddScoped<IStaffRepository, StaffRepository>();
         }
 
@@ -59,7 +66,7 @@ namespace StaffManagement
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Staff}/{action=Login}/{id?}");
             });
         }
     }

@@ -1690,3 +1690,5 @@ C:\Users\UzorNwachukwu\Desktop\StaffManagement\StaffManagement\obj\Debug\net5.0\
 C:\Users\UzorNwachukwu\Desktop\StaffManagement\StaffManagement\obj\Debug\net5.0\ref\StaffManagement.dll
 C:\Users\UzorNwachukwu\Desktop\StaffManagement\StaffManagement\obj\Debug\net5.0\StaffManagement.pdb
 C:\Users\UzorNwachukwu\Desktop\StaffManagement\StaffManagement\obj\Debug\net5.0\StaffManagement.genruntimeconfig.cache
+E:\Project Files\C# sandbox\StaffManagement\StaffManagement\obj\Debug\net5.0\Razor\Views\Shared\_LayoutBootstrap.cshtml.g.cs
+E:\Project Files\C# sandbox\StaffManagement\StaffManagement\obj\Debug\net5.0\Razor\Views\Staff\Register.cshtml.g.cs
