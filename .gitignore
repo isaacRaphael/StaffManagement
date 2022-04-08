@@ -10,6 +10,11 @@
 *.userosscache
 *.sln.docstates
 
+# Igonore migration
+/Migrations
+
+.vs
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
